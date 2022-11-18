@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.text-h1 {
+  font-size: 32px;
+}
+
+.header {
+  background-color: #c7d8ed;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.generator__h1 {
+  color: #504e4d;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.generator {
+  padding: 16px;
+  background: #f5f1f1;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper__item {
+  padding: 16px;
+  border: 1px dashed black;
+  background: #fff9f9;
+}
+.generator__form {
+}
+.form {
+}
+.form__label {
+  display: block;
+}
+.form__text {
+}
+.form__item {
+}
+.generator__preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  border: 1px solid black;
+  background: #f00;
+  width: 50px;
+  height: 50px;
+}
+.generator__result {
+}
+.text-box {
+}

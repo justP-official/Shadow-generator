@@ -10,8 +10,51 @@
 </head>
 
 <body>
-  <h1 class="text-h1">Генератор теней</h1>
-  <section class="generator"></section>
+  <header class="header">
+    <h1 class="text-h1 generator__h1">Генератор теней</h1>
+  </header>
+  <section class="generator">
+    <div class="container">
+      <div class="wrapper">
+        <div class="generator__form wrapper__item">
+          <form class="form">
+            <label for="inset" class="form__label">
+              <span class="form__text">Тень внутри</span>
+              <input class="form__item" name="inset" type="checkbox" id="inset">
+            </label>
+            <label for="shiftX" class="form__label">
+              <span class="form__text">Сдвиг по X</span>
+              <input class="form__item" name="shiftX" inputmode="numeric" pattern="[0-9]" type="text" id="shiftX">
+            </label>
+            <label for="shiftY" class="form__label">
+              <span class="form__text">Сдвиг по Y</span>
+              <input class="form__item" name="shiftY" inputmode="numeric" pattern="[0-9]" type="text" id="shiftY">
+            </label>
+            <label for="blur" class="form__label">
+              <span class="form__text">Размытие</span>
+              <input class="form__item" name="blur" inputmode="numeric" pattern="[0-9]" type="text" id="blur">
+            </label>
+            <label for="stretch" class="form__label">
+              <span class="form__text">Расстяжение</span>
+              <input class="form__item" name="stretch" inputmode="numeric" pattern="[0-9]" type="text" id="stretch">
+            </label>
+            <label for="color" class="form__label">
+              <span class="form__text">Цвет</span>
+              <input class="form__item" name="color" type="color" id="color">
+            </label>
+          </form>
+        </div>
+        <div class="generator__preview wrapper__item">
+          <div class="box"></div>
+        </div>
+        <div class="generator__result wrapper__item">
+          <div class="text-box">
+            Далеко-далеко за словесными горами в стране.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="js/main.js"></script>
 </body>
 
