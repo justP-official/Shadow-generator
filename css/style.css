@@ -73,6 +73,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .box {
   border: 1px solid black;
