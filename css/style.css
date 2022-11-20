@@ -52,6 +52,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex: 1;
 }
 .wrapper__item {
   padding: 16px;
@@ -84,4 +85,8 @@ body {
 .generator__result {
 }
 .text-box {
+}
+
+.text-box__text {
+  padding-left: 10px;
 }
