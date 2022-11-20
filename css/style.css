@@ -89,6 +89,8 @@ body {
   /* flex: 1; */
 }
 
+/* Форма */
+
 .generator__form {
 }
 .form {
@@ -100,6 +102,28 @@ body {
 }
 .form__item {
 }
+
+/* Счётчик */
+
+.switcher {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.switcher__button, .switcher__counter {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.switcher__button {
+  cursor: pointer;
+}
+
+/* Предпросмотр */
 .generator__preview .wrapper__body {
   display: flex;
   justify-content: center;
@@ -113,6 +137,8 @@ body {
   width: 80px;
   height: 80px;
 }
+
+/* Код */
 .generator__result {
 }
 .text-box {
