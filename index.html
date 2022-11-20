@@ -17,47 +17,62 @@
     <div class="container">
       <div class="wrapper">
         <div class="generator__form wrapper__item">
-          <form class="form">
-            <label for="shiftX" class="form__label">
-              <span class="form__text">Сдвиг по X</span>
-              <input class="form__item" name="shiftX" value="0" type="number" id="shiftX">
-            </label>
-            <label for="shiftY" class="form__label">
-              <span class="form__text">Сдвиг по Y</span>
-              <input class="form__item" name="shiftY" value="0" type="number" id="shiftY">
-            </label>
-            <label for="blurRadius" class="form__label">
-              <span class="form__text">Размытие</span>
-              <input class="form__item" name="blurRadius" value="0" type="number" id="blurRadius">
-            </label>
-            <label for="stretch" class="form__label">
-              <span class="form__text">Расстяжение</span>
-              <input class="form__item" name="stretch" value="0" type="number" id="stretch">
-            </label>
-            <label for="color" class="form__label">
-              <span class="form__text">Цвет</span>
-              <input class="form__item" name="color" value="#000000" type="color" id="color">
-            </label>
-            <label for="inset" class="form__label">
-              <span class="form__text">Тень внутри</span>
-              <input class="form__item" name="inset" value="" type="checkbox" id="inset">
-            </label>
-            <!-- <button onclick="getValue()">Отправить</button> -->
-          </form>
+          <div class="wrapper__header">Параметры</div>
+          <div class="wrapper__body">
+            <form class="form">
+              <label class="form__label">
+                <span class="form__text">Сдвиг по X</span>
+                <input class="form__item" name="shiftX" value="0" type="number">
+              </label>
+              <label class="form__label">
+                <span class="form__text">Сдвиг по Y</span>
+                <input class="form__item" name="shiftY" value="0" type="number">
+              </label>
+              <label class="form__label">
+                <span class="form__text">Размытие</span>
+                <input class="form__item" name="blurRadius" value="0" type="number">
+              </label>
+              <label class="form__label">
+                <span class="form__text">Расстяжение</span>
+                <input class="form__item" name="stretch" value="0" type="number">
+              </label>
+              <label class="form__label">
+                <span class="form__text">Цвет</span>
+                <input class="form__item" name="color" value="#000000" type="color">
+              </label>
+              <label class="form__label">
+                <span class="form__text">Тень внутри</span>
+                <input class="form__item" name="inset" value="" type="checkbox">
+              </label>
+            </form>
+          </div>
+          <div class="wrappper__footer"></div>
         </div>
         <div class="generator__preview wrapper__item">
-          <div class="box" id="box"></div>
+          <div class="wrapper__header">Предпросмотр</div>
+          <div class="wrapper__body">
+            <div class="box" id="box"></div>
+          </div>
+          <div class="wrappper__footer"></div>
         </div>
         <div class="generator__result wrapper__item">
-          <div class="text-box">
-            .box {<br>
-              <span class="text-box__text">box-shadow: 0px 0px 0px 0px;</span><br>
-            }
+          <div class="wrapper__header">Код</div>
+          <div class="wrapper__body">
+            <div class="text-box">
+              .box {<br>
+                <span class="text-box__text">box-shadow: 0px 0px 0px 0px;</span><br>
+              }
+            </div>
           </div>
+          <div class="wrappper__footer"></div>
         </div>
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    &copy; Генератор теней by justP
+  </footer>
   <script src="js/main.js"></script>
 </body>
 
