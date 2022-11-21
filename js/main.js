@@ -6,7 +6,9 @@ let btn = document.querySelectorAll(".switcher__button");
 let add = document.querySelector(".switcher__button_add");
 let del = document.querySelector(".switcher__button_del");
 
-
+let result1 = document.querySelector(".text-box__text1");
+let result2 = document.querySelector(".text-box__text2");
+let result3 = document.querySelector(".text-box__text3");
 // console.log(counter);
 
 add.addEventListener("click", function() {
@@ -34,7 +36,7 @@ del.addEventListener("click", function() {
     console.log(counter);
 });
 
-let result = document.querySelector(".text-box__text");
+
 
 let inputs = document.querySelectorAll(".form__item[type='number']");
 inputs.forEach(function(input) {
@@ -96,7 +98,9 @@ function createShadow() {
 
     document.getElementById("box").style.boxShadow = `${shadowBox1} ${shadowColor1}, ${shadowBox2} ${shadowColor2}, ${shadowBox3} ${shadowColor3}`;
 
-    result.innerText = `${shadowBox1} ${shadowColor1}, ${shadowBox2} ${shadowColor2}, ${shadowBox3} ${shadowColor3}`
+    result1.innerText = `${shadowBox1} ${shadowColor1}`;
+    result2.innerText = `,${shadowBox2} ${shadowColor2}`;
+    result3.innerText = `,${shadowBox3} ${shadowColor3};`;
 }
 
 createShadow();
