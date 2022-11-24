@@ -35,6 +35,10 @@ body {
   font-size: 26px;
 }
 
+.text-h3 {
+  font-size: 24px;
+}
+
 .header {
   background-color: #c7d8ed;
   padding-top: 8px;
@@ -59,6 +63,17 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 8px;
+}
+
+.generator__h3 {
+  color: #5a5353;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.generator__h3_text-align_left {
+  text-align: left;
 }
 
 .generator {
@@ -86,18 +101,20 @@ body {
   padding-left: 8px;
   border-bottom: 1px solid #000;
   background: #ede4e4;
-  /* flex: 1; */
 }
 
 .wrapper__body {
-  /* flex: 1; */
   align-items: center;
   padding-top: 8px;
   padding-left: 8px;
 }
 
 .wrapper__footer {
-  /* flex: 1; */
+  padding: 8px;
+}
+
+.wrapper__footer_border-top {
+  border-top: 1px solid #000;
 }
 
 /* Форма */
@@ -159,15 +176,27 @@ body {
 }
 
 /* Код */
-.generator__result {
-}
+
 .text-box {
+  border: 1px solid #000;
+  font-family: monospace;
+  padding: 8px;
+  background: #f0f0f0;
 }
 
 .text-box__text {
-  padding-left: 10px;
+  white-space: pre;
 }
 
-.text-box__text2, .text-box__text3 {
-  display: none;
+.copy {
+  padding-top: 8px;
+}
+
+.copy__btn {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-inline: auto;
 }
