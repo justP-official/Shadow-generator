@@ -107,15 +107,17 @@ body {
   align-items: center;
   padding-top: 8px;
   padding-left: 8px;
+  border-bottom: 1px solid #000;
+  min-height: 204px;
 }
 
 .wrapper__footer {
   padding: 8px;
 }
 
-.wrapper__footer_border-top {
+/* .wrapper__footer_border-top {
   border-top: 1px solid #000;
-}
+} */
 
 /* Форма */
 
@@ -167,7 +169,7 @@ body {
 }
 
 .box {
-  border: 1px solid black;
+  border: 1px solid violet;
   background: #f00;
   margin-top: 24px;
   margin-bottom: 24px;

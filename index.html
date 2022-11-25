@@ -22,11 +22,10 @@
           </div>
           <div class="wrapper__body">
             <div class="switcher">
-              <button class="switcher__button switcher__button_del">-</button>
+              <button class="switcher__button switcher__button_del" type="button">-</button>
               <span class="switcher__counter">1</span>
-              <button class="switcher__button switcher__button_add">+</button>
+              <button class="switcher__button switcher__button_add" type="button">+</button>
             </div>
-            <div class="generator__loop"></div>
             <form class="form">
               <label class="form__label">
                 <span class="form__text">Сдвиг по X</span>
@@ -106,7 +105,17 @@
               </label>
             </form>
           </div>
-          <div class="wrapper__footer"></div>
+          <div class="wrapper__footer">
+            <div class="values">
+              <h3 class="text-h3 generator__h3 generator__h3_text-align_left">Значения</h3>
+              <p class="values__text"><strong>Сдвиг по X</strong> &mdash; Смещение тени по горизонтали относительно элемента. Положительное значение этого параметра задает сдвиг тени вправо, отрицательное — влево. Обязательный параметр.</p>
+              <p class="values__text"><strong>Сдвиг по Y</strong> &mdash; Смещение тени по вертикали относительно элемента. Положительное значение задает сдвиг тени вниз, отрицательное — вверх. Обязательный параметр.</p>
+              <p class="values__text"><strong>Размытие</strong> &mdash; Задает радиус размытия тени. Чем больше это значение, тем сильнее тень сглаживается, становится шире и светлее. Если этот параметр не задан, по умолчанию устанавливается равным 0, тень при этом будет четкой, а не размытой.</p>
+              <p class="values__text"><strong>Расстяжение</strong> &mdash; Положительное значение растягивает тень, отрицательное, наоборот, ее сжимает. Если этот параметр не задан, по умолчанию устанавливается 0, при этом тень будет того же размера, что и элемент.</p>
+              <p class="values__text"><strong>Тень внутри</strong> &mdash; Тень выводится внутри элемента. Необязательный параметр.</p>
+              <p class="values__text"><strong>Цвет</strong> &mdash; Цвет тени в любом доступном CSS формате, по умолчанию тень черная. Необязательный параметр.</p>
+            </div>
+          </div>
         </div>
         <div class="generator__preview wrapper__item">
           <div class="wrapper__header">
@@ -115,7 +124,7 @@
           <div class="wrapper__body">
             <div class="box" id="box"></div>
           </div>
-          <div class="wrapper__footer wrapper__footer_border-top">
+          <div class="wrapper__footer">
             <h3 class="text-h3 generator__h3 generator__h3_text-align_left">Код</h3>
             <div class="text-box">
               .box {<br>
