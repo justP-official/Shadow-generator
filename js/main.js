@@ -105,7 +105,7 @@ function createShadow() {
  
     let resultArray = [shadowBox1, shadowBox2, shadowBox3];
     let resultText = resultArray.join(',\n\t');
-    result.innerText = `\t${resultText};`;
+    result.innerText = `\tbox-shadow: ${resultText};`;
 
     let copy = document.querySelector(".copy__btn");
     copy.addEventListener("click", function() {

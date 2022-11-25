@@ -79,7 +79,6 @@ body {
 .generator {
   padding: 16px;
   background: #f5f1f1;
-  min-height: 89vh;
 }
 .wrapper {
   display: flex;
@@ -115,10 +114,6 @@ body {
   padding: 8px;
 }
 
-/* .wrapper__footer_border-top {
-  border-top: 1px solid #000;
-} */
-
 /* Форма */
 
 .generator__form {
@@ -131,11 +126,26 @@ body {
   display: none;
 }
 .form__label {
-  display: block;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
 }
 .form__text {
+  margin: 0;
+  padding-bottom: 6px;
 }
 .form__item {
+  margin: 0;
+  padding: 4px 8px;
+  color: #908e8e;
+  background: #e4e3e3;
+  border: none;
+  border-radius: 5px;
+}
+
+.form__item:focus {
+  outline-color: #ccc;
 }
 
 /* Счётчик */
@@ -169,7 +179,6 @@ body {
 }
 
 .box {
-  border: 1px solid violet;
   background: #f00;
   margin-top: 24px;
   margin-bottom: 24px;
